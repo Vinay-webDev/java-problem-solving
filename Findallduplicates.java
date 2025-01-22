@@ -3,7 +3,6 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.List;
-
 public class Findallduplicates {
     public static int[] findallduplicates(int[] arr) {
         int n = arr.length;

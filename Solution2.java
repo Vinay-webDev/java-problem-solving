@@ -20,3 +20,7 @@ public class Solution2 {
         System.err.println(diagonalDifference(arr1)); //9
     }
 }
+
+
+
+
