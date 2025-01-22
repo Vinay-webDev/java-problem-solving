@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class Reverse {
     public static int[] reverse(int[] arr) {
         int n = arr.length;
