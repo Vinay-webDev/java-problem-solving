@@ -1,16 +1,14 @@
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
 public class Sumofuniquenums {
     public static int sumOfUniqueNumbers(int[] arr) {
-        int n = arr.length;
-        Set<Integer> set = new HashSet<>();
+        HashMap<Integer, Integer> frequency = new HashMap<>();
         int sum = 0;
-        for (int i = 0; i < n; i++) {
-            if (!set.contains(arr[i])) {
-                set.add(arr[i]);
-                sum += arr[i];
-            } else {
-                sum -= arr[i];
+        for (int num: arr) {
+            frequency.put(num, frequency.getOrDefault(num, 0) + 1);
+        }
+        for (int num : frequency.keySet()) {
+            if (frequency.get(num) == 1) {
+                sum += num;
             }
         }
         return sum;
@@ -22,3 +20,5 @@ public class Sumofuniquenums {
         System.out.println(sumOfUniqueNumbers(arr2)); //11
     }
 }
+
+
