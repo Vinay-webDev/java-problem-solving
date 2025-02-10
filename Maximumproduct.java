@@ -13,3 +13,6 @@ public class Maximumproduct {
         System.out.println(maximumProduct(arr2)); //385
     }
 }
+
+
+
